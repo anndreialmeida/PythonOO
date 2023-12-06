@@ -1,8 +1,8 @@
 class Serie: 
-    def __init__(self, nome, ano, duracao):
+    def __init__(self, nome, ano, tenporadas):
         self.__nome = nome.title()
         self.__ano = ano 
-        self.__duracao = duracao
+        self.__tenporadas = tenporadas
         self.__likes = 0
     
     @property
@@ -29,6 +29,6 @@ class Serie:
         self.__ano = ano_atualizado
 
     @property
-    def duracao(self):
-        return self.__duracao
+    def tenporadas(self):
+        return self.__tenporadas
 

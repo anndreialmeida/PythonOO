@@ -26,8 +26,8 @@ filme = Filme(nome="A volta dos que não foram", ano=1992, duracao=150 )
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 print(vingadores.nome)
 
-atlanta = Serie('atlanta', 2018, 2)
+atlanta = Serie('atlanta', 2018, 5)
 for i in range(0, 1800):
     atlanta.dar_like()
 
-print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Likes: {atlanta.like}')
+print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Temporadas: {atlanta.tenporadas} - Likes: {atlanta.like}')

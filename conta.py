@@ -21,9 +21,13 @@ class Conta:
     def limite(self, limite):
         self.__limite = limite
 
-    @property
-    def codigo_banco(self):
-        return self.__codigo_banco
+    @staticmethod
+    def codigo_banco():
+        return "001"
+    
+    @staticmethod
+    def codigo_bancos():
+        return {'BB': '001', 'Caixa': '104', 'Bradesco': '237'}
     
     def __pode_sacar(self, valor_a_sacar):
         return valor_a_sacar <= (self.limite + self.saldo)
@@ -42,6 +46,7 @@ class Conta:
         destino.deposita(valor)
     
     def extrato(self):
+        print("{} - Banco do Brasil -".format(self.__codigo_banco))
         print("{}, seu saldo é de R$: {}, e o limite disponivel é R$: {}".format(self.__titular, self.__saldo, self.__limite))
     
 

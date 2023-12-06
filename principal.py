@@ -11,19 +11,17 @@ conta.extrato()
 
 conta.transfere(50, conta2)
 
+
+
 conta.extrato()
 conta2.extrato()
 
-print(conta2.limite)
-print(conta.saldo)
-print(conta.limite)
-conta.limite = 18900
+print(Conta.codigo_banco())
 
-print(conta.limite)
+print(Conta.codigo_bancos())
 
-conta.saca(25000)
-print(conta.saldo)
+lista_bancos = Conta.codigo_bancos()
 
-print(conta.codigo_banco)
+print(lista_bancos['BB'])
 
 

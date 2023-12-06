@@ -3,6 +3,7 @@ class Conta:
         self.__titular = titular 
         self.__saldo = saldo
         self.__limite = limite
+        self.__codigo_banco = "001"
     
     @property
     def saldo(self):
@@ -19,6 +20,10 @@ class Conta:
     @limite.setter
     def limite(self, limite):
         self.__limite = limite
+
+    @property
+    def codigo_banco(self):
+        return self.__codigo_banco
     
     def __pode_sacar(self, valor_a_sacar):
         return valor_a_sacar <= (self.limite + self.saldo)

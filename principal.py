@@ -24,4 +24,6 @@ print(conta.limite)
 conta.saca(25000)
 print(conta.saldo)
 
+print(conta.codigo_banco)
+
 

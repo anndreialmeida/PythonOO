@@ -1,5 +1,6 @@
 from conta import Conta
 from filme import Filme
+from serie import Serie 
 
 conta = Conta(titular="Andrei", saldo=50, limite=1500)
 conta2 = Conta(titular="Saci", saldo=5, limite=10)
@@ -26,4 +27,7 @@ vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 print(vingadores.nome)
 
 atlanta = Serie('atlanta', 2018, 2)
-print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano}')
+for i in range(0, 1800):
+    atlanta.dar_like()
+
+print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Likes: {atlanta.like}')

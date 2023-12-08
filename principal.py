@@ -8,28 +8,28 @@ conta2 = Conta(titular="Saci", saldo=5, limite=10)
 
 conta.deposita(150)
 conta.saca(50)
-
-conta.extrato()
-
 conta.transfere(50, conta2)
-
-
-
+"""
 conta.extrato()
 conta2.extrato()
 
+"""
 
-
-
-filme = Filme(nome="A volta dos que não foram", ano=1992, duracao=150 )
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 vingadores.dar_like()
-print(f'Nome: {vingadores.nome} - Ano: {vingadores.ano} - Temporadas: {vingadores.duracao} - Likes: {vingadores.likes}')
+#print(f'Nome: {vingadores.nome} - Ano: {vingadores.ano} - Temporadas: {vingadores.duracao} - Likes: {vingadores.likes}')
+
 
 atlanta = Serie('atlanta', 2018, 5)
-
 for i in range(0, 1800):
     atlanta.dar_like()
+#print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Temporadas: {atlanta.tenporadas} - Likes: {atlanta.likes}')
 
-print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Temporadas: {atlanta.tenporadas} - Likes: {atlanta.likes}')
+filmes_e_series = [vingadores, atlanta]
+
+for programa in filmes_e_series:
+    ## verifica se possui o atributo duracao no objeto programa, se não imprime temporadas em vez de duracao
+    detalhes = programa.duracao if hasattr(programa, 'duracao') else programa.temporadas
+    print(f'{programa.nome} - T: {detalhes} - Likes: {programa.likes}')
+    

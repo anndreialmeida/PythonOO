@@ -24,10 +24,12 @@ conta2.extrato()
 filme = Filme(nome="A volta dos que não foram", ano=1992, duracao=150 )
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
-print(vingadores.nome)
+vingadores.dar_like()
+print(f'Nome: {vingadores.nome} - Ano: {vingadores.ano} - Temporadas: {vingadores.duracao} - Likes: {vingadores.likes}')
 
 atlanta = Serie('atlanta', 2018, 5)
+
 for i in range(0, 1800):
     atlanta.dar_like()
 
-print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Temporadas: {atlanta.tenporadas} - Likes: {atlanta.like}')
+print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Temporadas: {atlanta.tenporadas} - Likes: {atlanta.likes}')

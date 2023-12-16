@@ -1,0 +1,46 @@
+﻿{
+  "paramExec": {
+    "cdEmpresa": 81,
+    "cdFilial": 194,
+    "usuario": "00099764449",
+    "classe": "1",
+    "nrRoad": "3"
+  },
+  "pedidos": [
+    {
+      "cdCli": "19464042",
+      "tpEmb": "D",
+      "nrPed": "03246578001",
+      "qtde": 12,
+      "qtdeAvulsa": 0,
+      "classe": null,
+      "dtEnt": "2022-05-04T06:00:00-03:00",
+      "vlPed": 0.0,
+      "obs": "246578541029",
+      "idadePed": 2,
+      "dtPed": "2022-04-28T06:00:00-03:00",
+      "stPrior": "N",
+      "diasAtend": "XXXXXX",
+      "prior": 2,
+      "vlTotEmb": 796.65,
+      "peso": 155.4,
+      "volume": 12.0,
+      "sequencia": null,
+      "tipoProduto": null,
+      "reentrega": false,
+      "codigoProduto": null,
+      "descricaoProduto": null,
+      "coleta": false,
+      "notaFiscal": null,
+      "remetente": null,
+      "dsCondPgto": "BLOQUETO 3 DD C/AF",
+      "cdCondPgto": "93",
+      "unbCliente": false,
+      "identificadorMagali": null,
+      "codigoUdc": null,
+      "volumeHecto": null
+    }
+  ],
+  "idDeposito": null,
+  "guidAsync": null
+}
